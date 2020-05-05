@@ -4,3 +4,34 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
 }
+
+.heading {
+    color: $color-neutral-1;
+    text-align: center;
+
+    &-primary {
+        @extend .heading;
+
+        font-size: 3rem;
+        margin-bottom: 1.8rem;
+    }
+    &-secondary {
+        @extend .heading;
+
+        font-size: 2.6rem;
+        margin-bottom: 1.8rem;
+    }
+    &-tertiary {
+        @extend .heading;
+
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.paragraph {
+    color: $color-neutral-2;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-align: center;
+}
