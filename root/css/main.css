@@ -202,3 +202,35 @@ body {
   background-color: #6173ff;
   border-bottom: 2px solid #3f55ff;
 }
+
+.sponsors {
+  display: -ms-grid;
+  display: grid;
+  gap: 7rem;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 10rem;
+}
+
+.sponsors-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.sponsors-box__img {
+  width: 35%;
+}
