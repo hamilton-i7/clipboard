@@ -1,0 +1,12 @@
+.cta {
+    padding-bottom: 15rem;
+    padding-top: 5rem;
+
+    &-heading {
+        margin-bottom: 5rem;
+    }
+
+    &-buttons-box {
+        @include flexRow(false);
+    }
+}

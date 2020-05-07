@@ -1,0 +1,26 @@
+.btn {
+    border: none;
+    border-radius: 3rem;
+    color: $color-white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    outline: none;
+    padding: 1.6rem 0;
+    text-align: center;
+    width: 95%;
+
+    &-primary-1 {
+        @extend .btn;
+        background-color: $color-primary-1;
+        border-bottom: 2px solid $color-primary-1--dark;
+        margin-bottom: 1.8rem;
+    }
+
+    &-primary-2 {
+        @extend .btn;
+        background-color: $color-primary-2;
+        border-bottom: 2px solid $color-primary-2--dark;
+    }
+}

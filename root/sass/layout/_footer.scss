@@ -1,0 +1,38 @@
+.footer {
+    @include flexRow(false);
+    @include flexContent($align: center);
+
+    background-color: rgba($color-neutral-2, .1);
+    padding: 4rem 0;
+
+
+    &-logo-box {
+        width: 13%;
+        margin-bottom: 3.5rem;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &-links {
+        color: $color-neutral-1;
+        list-style: none;
+        text-align: center;
+
+        &__item {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &-social {
+        @include flexRow(true);
+        @include flexContent($justify: space-between);
+        margin-top: 2.5rem;
+        width: 40%;
+
+        &__img {
+
+        }
+    }
+}
