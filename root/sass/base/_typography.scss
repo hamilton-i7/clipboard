@@ -4,6 +4,10 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
+
+    @media only screen and (min-width: 800px) {
+        font-size: 1.7rem;
+    }
 }
 
 .heading {
@@ -24,14 +28,16 @@ body {
     }
     &-tertiary {
         @extend .heading;
-
         font-size: 2.4rem;
         margin-bottom: 1rem;
+
+        @media only screen and (min-width: 1000px) {
+            text-align: left;
+        }
     }
 }
 
 .paragraph {
     color: $color-neutral-2;
     line-height: 1.7;
-    text-align: center;
 }

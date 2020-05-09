@@ -5,10 +5,16 @@
     background-color: rgba($color-neutral-2, .1);
     padding: 4rem 0;
 
+    @media only screen and (min-width: 800px) {
+        @include flexRow(true);
+        @include flexContent($align: flex-start, $justify: space-evenly);
+    }
+
 
     &-logo-box {
-        width: 13%;
         margin-bottom: 3.5rem;
+        max-width: 5rem;
+        width: 13%;
 
         &__img {
             width: 100%;
@@ -19,6 +25,11 @@
         color: $color-neutral-1;
         list-style: none;
         text-align: center;
+        
+        @media only screen and (min-width: 800px) {
+            column-count: 3;
+            text-align: left;
+        }
 
         &__item {
             margin-bottom: 2.5rem;
@@ -29,6 +40,7 @@
         @include flexRow(true);
         @include flexContent($justify: space-between);
         margin-top: 2.5rem;
+        max-width: 15rem;
         width: 40%;
 
         &__img {

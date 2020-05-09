@@ -8,8 +8,13 @@
     padding-bottom: 15rem;
     padding-top: 10rem;
 
+    @media only screen and (min-width: 800px) {
+        padding-bottom: 10rem;
+    }
+
     &-logo-box {
         margin-bottom: 6rem;
+        max-width: 11rem;
         width: 35%;
 
         &__logo {
@@ -25,7 +30,17 @@
     &-cta {
         @include flexRow(false);
         @include flexContent($align: center);
-
         width: 100%;
+
+        @media only screen and (min-width: 800px) {
+            @include flexRow(true);
+            @include flexContent($align: flex-start, $justify: space-evenly);
+        }
+
+        & button {
+            @media only screen and (min-width: 800px) {
+                flex-basis: 45%;
+            }
+        }
     }
 }
