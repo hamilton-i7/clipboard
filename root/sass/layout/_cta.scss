@@ -23,9 +23,18 @@
             @include flexContent($align: flex-start, $justify: space-evenly);
         }
 
+        @media only screen and (min-width: 600px) and (max-width: 999px) and (max-height: 500px) {
+            @include flexRow(true);
+            @include flexContent($align: flex-start, $justify: space-evenly);   
+        }
+
         & button {
             @media only screen and (min-width: 800px) {
                 flex-basis: 45%;
+            }
+
+            @media only screen and (min-width: 600px) and (max-width: 999px) and (max-height: 500px) {
+                flex-basis: 40%;
             }
         }
     }
