@@ -68,6 +68,15 @@
 
         &-benefits {
             margin-bottom: 4.5rem;
+
+            & > p:nth-child(2) {
+                text-align: center;
+
+                @media only screen and (min-width: 1000px) {
+                    margin-right: 1.5rem;
+                    text-align: left;
+                }
+            }
         }
 
         @media only screen and (min-width: 1000px) {
@@ -79,6 +88,10 @@
             }
             &-benefits:nth-child(5) {
                 grid-area: benefit-3;
+            }
+
+            & > p:nth-child(2) {
+                text-align: left;
             }
         }
     }

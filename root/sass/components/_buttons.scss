@@ -18,11 +18,27 @@
         background-color: $color-primary-1;
         border-bottom: 2px solid $color-primary-1--dark;
         margin-bottom: 1.8rem;
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            @media only screen and (pointer: fine) {
+                background-color: rgba($color-primary-1, .8);
+            }
+        }
     }
 
     &-primary-2 {
         @extend .btn;
         background-color: $color-primary-2;
         border-bottom: 2px solid $color-primary-2--dark;
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            @media only screen and (pointer: fine) {
+                background-color: rgba($color-primary-2, .8);
+            }
+        }
     }
 }
