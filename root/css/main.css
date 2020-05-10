@@ -45,6 +45,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
 .heading, .heading-primary, .heading-secondary, .heading-tertiary {
   color: #4c545d;
   text-align: center;
@@ -55,9 +61,33 @@ body {
   margin-bottom: 1.8rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .heading-primary {
+    font-size: 4.6rem;
+  }
+}
+
 .heading-secondary {
   font-size: 2.6rem;
   margin-bottom: 1.8rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
 }
 
 .heading-tertiary {
@@ -79,10 +109,12 @@ body {
 .btn, .btn-primary-1, .btn-primary-2 {
   border: none;
   border-radius: 3rem;
+  -webkit-box-shadow: 0 6px 12px rgba(27, 27, 27, 0.15);
+          box-shadow: 0 6px 12px rgba(27, 27, 27, 0.15);
   color: #f3f3f3;
   cursor: pointer;
   font-family: inherit;
-  font-size: 1.6rem;
+  font-size: inherit;
   font-weight: 600;
   max-width: 30rem;
   outline: none;
@@ -301,7 +333,7 @@ body {
     display: -ms-grid;
     display: grid;
     grid-auto-rows: minmax(5rem, auto);
-        grid-template-areas: "heading heading heading heading heading heading heading heading heading" ". . . . . . . . . " "benefit-1 benefit-1 benefit-1 benefit-2 benefit-2 benefit-2 benefit-3 benefit-3 benefit-3" "benefit-1 benefit-1 benefit-1 benefit-2 benefit-2 benefit-2 benefit-3 benefit-3 benefit-3" "benefit-1 benefit-1 benefit-1 benefit-2 benefit-2 benefit-2 benefit-3 benefit-3 benefit-3";
+        grid-template-areas: "heading heading heading heading heading heading heading heading heading" ". . . . . . . . . " ". . . . . . . . . " "benefit-1 benefit-1 benefit-1 benefit-2 benefit-2 benefit-2 benefit-3 benefit-3 benefit-3" "benefit-1 benefit-1 benefit-1 benefit-2 benefit-2 benefit-2 benefit-3 benefit-3 benefit-3" "benefit-1 benefit-1 benefit-1 benefit-2 benefit-2 benefit-2 benefit-3 benefit-3 benefit-3";
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
     padding: 0 5rem;
@@ -362,6 +394,12 @@ body {
   width: 15%;
 }
 
+@media only screen and (min-width: 1280px) {
+  .dashboard-bottom-benefits-img-box {
+    max-width: 4rem;
+  }
+}
+
 .dashboard-bottom-benefits-img-box__img {
   display: block;
   width: 100%;
@@ -419,10 +457,28 @@ body {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .footer {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .footer-logo-box {
   margin-bottom: 3.5rem;
-  max-width: 5rem;
+  max-width: 6rem;
   width: 13%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-logo-box {
+    margin-right: -10rem;
+  }
 }
 
 .footer-logo-box__img {
@@ -440,6 +496,13 @@ body {
     -webkit-column-count: 3;
             column-count: 3;
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-links {
+    -ms-flex-preferred-size: 38%;
+        flex-basis: 38%;
   }
 }
 
@@ -466,6 +529,20 @@ body {
   margin-top: 2.5rem;
   max-width: 15rem;
   width: 40%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-social {
+    height: 20%;
+    max-width: none;
+    width: 10%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-social__img {
+    width: 20%;
+  }
 }
 
 .hero {
@@ -497,6 +574,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .hero {
+    margin-bottom: 5rem;
+  }
+}
+
 .hero-logo-box {
   margin-bottom: 6rem;
   max-width: 11rem;
@@ -510,6 +593,7 @@ body {
 
 .hero-heading {
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .hero-cta {
@@ -551,6 +635,18 @@ body {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .hero-cta {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero-cta {
+    width: 60%;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .hero-cta button {
     -ms-flex-preferred-size: 45%;
@@ -576,15 +672,21 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-line-pack: start;
         align-content: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 4rem 5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sponsors {
+    margin: 8rem 0;
   }
 }
 
@@ -608,12 +710,18 @@ body {
 }
 
 .sponsors-box__img {
-  max-width: 13rem;
+  max-width: 15rem;
   width: 35%;
 }
 
 @media only screen and (min-width: 1000px) {
   .sponsors-box__img {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sponsors-box__img {
+    width: 60%;
   }
 }

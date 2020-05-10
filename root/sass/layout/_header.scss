@@ -11,6 +11,9 @@
     @media only screen and (min-width: 800px) {
         padding-bottom: 10rem;
     }
+    @media only screen and (min-width: 1400px) {
+        margin-bottom: 5rem;
+    }
 
     &-logo-box {
         margin-bottom: 6rem;
@@ -25,6 +28,7 @@
 
     &-heading {
         margin-bottom: 4rem;
+        text-align: center;
     }
 
     &-cta {
@@ -35,6 +39,12 @@
         @media only screen and (min-width: 800px) {
             @include flexRow(true);
             @include flexContent($align: flex-start, $justify: space-evenly);
+        }
+        @media only screen and (min-width: 1000px) {
+            width: 80%;
+        }
+        @media only screen and (min-width: 1400px) {
+            width: 60%;
         }
 
         & button {
